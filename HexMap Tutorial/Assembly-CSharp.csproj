@@ -36,9 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\HexMetrics.cs" />
-     <Compile Include="Assets\Scripts\HexCell.cs" />
      <Compile Include="Assets\Scripts\HexGrid.cs" />
+     <Compile Include="Assets\Scripts\HexCell.cs" />
+     <Compile Include="Assets\Scripts\HexMetrics.cs" />
+     <Compile Include="Assets\Scripts\HexMesh.cs" />
+     <Compile Include="Assets\Scripts\HexCoordinates.cs" />
+     <Compile Include="Assets\Scripts\HexMapEditor.cs" />
+     <None Include="Assets\Material\VertexColors.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
