@@ -1,9 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class HexMapEditor : MonoBehaviour {
 
-    public Color[] colors;
+	public Color[] colors;
 
 	public HexGrid hexGrid;
 
@@ -12,8 +12,12 @@ public class HexMapEditor : MonoBehaviour {
 	void Awake () {
 		SelectColor(0);
 	}
-    void Update () {
-		if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()) {
+
+	void Update () {
+		if (
+			Input.GetMouseButton(0) &&
+			!EventSystem.current.IsPointerOverGameObject()
+		) {
 			HandleInput();
 		}
 	}
@@ -25,7 +29,8 @@ public class HexMapEditor : MonoBehaviour {
 			hexGrid.ColorCell(hit.point, activeColor);
 		}
 	}
-    public void SelectColor (int index) {
+
+	public void SelectColor (int index) {
 		activeColor = colors[index];
 	}
 }
